@@ -1,0 +1,19 @@
+<h3 class="d-flex justify-content-center py-2 py-md-3 mt-4 title1 display-1">
+  Upcoming Events
+</h3>
+
+<section class="w-100 py-2 py-md-3">
+  <swiper-container id="dynamicSwiper" init="false">
+    <swiper-slide *ngFor="let item of slides">
+      <div class="swiper-slide-content">
+        <img
+          class="upcomingSliderImg object-fit-cover"
+          [src]="item.image"
+          alt="Slide Image"
+          loading="lazy"
+        />
+        <!-- <p>{{ item.title }}</p> -->
+      </div>
+    </swiper-slide>
+  </swiper-container>
+</section>

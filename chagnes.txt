@@ -1,0 +1,1 @@
+1. CHANGED THE ASSETS TO "src/assets"

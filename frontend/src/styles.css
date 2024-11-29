@@ -1,0 +1,52 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+
+@font-face {
+  font-family: "EduAustraliaHandArrow";
+  src: url("assets/fonts/EduAustraliaVICWA.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Nunito-VariableFont_wght";
+  src: url("assets/fonts/Nunito-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.title1 {
+  font-family: "EduAustraliaHandArrow", sans-serif;
+}
+
+.hero-font {
+  font-family: "Nunito-VariableFont_wght", sans-serif;
+}
+.nav-glass{
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  /* border: 1px solid rgba(255, 255, 255, 0.3); */
+  }
+/* Overlay Styling */
+.overlay {
+  background: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Text Container Styling */
+.text-container {
+  z-index: 2; /* Ensure text appears above the overlay */
+  color: white; /* Ensure the text remains white */
+  padding: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add shadow for better visibility */
+}
