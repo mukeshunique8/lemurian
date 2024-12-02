@@ -1,13 +1,44 @@
 import { Routes } from '@angular/router';
-import { LandingComponent } from './landing/landing.component';
+import { PageHomeComponent } from './page-home/page-home.component';
+import { PageLoginComponent } from './page-login/page-login.component';
+import { PageServicesComponent } from './page-services/page-services.component';
+import { PageEventsComponent } from './page-events/page-events.component';
+import { PageGalleryComponent } from './page-gallery/page-gallery.component';
+import { PageAboutComponent } from './page-about/page-about.component';
+import { PageContactComponent } from './page-contact/page-contact.component';
 
 export const routes: Routes = [
   {
     path: '',
-    component: LandingComponent,
+    component: PageHomeComponent,
   },
-  // {
-  //   path: 'home',
-  //   component: LandingComponent,
-  // },
+  {
+    path: 'login',
+    component: PageLoginComponent,
+  },
+  {
+    path: 'services',
+    component: PageServicesComponent,
+  },
+  {
+    path: 'events',
+    component: PageEventsComponent,
+  },
+  {
+    path: 'login',
+    component: PageLoginComponent,
+  },
+  {
+    path: 'gallery',
+    component: PageGalleryComponent,
+  },
+  {
+    path: 'contact',
+    component: PageContactComponent,
+  },
+  {
+    path: 'aboutus',
+    component: PageAboutComponent,
+  },
+ 
 ];

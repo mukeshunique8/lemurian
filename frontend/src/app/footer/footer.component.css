@@ -1,0 +1,23 @@
+/* Facebook */
+.fab.fa-facebook-f {
+  color: #3b5998; /* Facebook Blue */
+}
+
+/* Twitter */
+.fab.fa-twitter {
+  color: #1da1f2; /* Twitter Blue */
+}
+
+/* Google */
+.fab.fa-google {
+  color: #db4437; /* Google Red */
+}
+
+/* Instagram */
+.fab.fa-instagram {
+  color: #e4405f; /* Instagram Pink */
+}
+
+.polarWhite{
+  background-color: #eeeeee; 
+}

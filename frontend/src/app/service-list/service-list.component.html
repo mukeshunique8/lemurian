@@ -1,150 +1,21 @@
 <h3 class="d-flex justify-content-center py-2 py-md-3 mt-4 title1 display-1">
   What We Do
 </h3>
-<section class="px-2">
-  <div
-    class="d-flex py-2 py-md-3 gap-5 justify-content-center justify-content-md-between flex-wrap"
-  >
-    <!-- Wedding Card -->
-    <div class="card border-0 shadow-lg" style="width: 350px">
-      <img
-        src="../../assets/images/events/Wedding.jpg"
-        class="card-img-top img-fluid object-fit-cover"
-        alt="Wedding"
-      />
-      <div class="card-body">
-        <h5 class="card-title">Wedding</h5>
-        <p class="card-text">
-          A celebration of love! Let us help capture your perfect wedding day
-          with breathtaking decor and photography.
-        </p>
-      </div>
-    </div>
 
-    <!-- Engagement Card -->
-    <div class="card border-0 shadow-lg" style="width: 350px">
-      <img
-        src="../../assets/images/events/Engagement.jpg"
-        class="card-img-top img-fluid object-fit-cover"
-        alt="Engagement"
-      />
-      <div class="card-body">
-        <h5 class="card-title">Engagement</h5>
-        <p class="card-text">
-          The moment you say yes is unforgettable. We’re here to help make it
-          picture-perfect with stunning decor and photography.
-        </p>
+<section class="w-100">
+  <swiper-container id="serviceSwiper" init="false">
+    <swiper-slide class="py-5 px-2" *ngFor="let service of services">
+      <div class="card border-0 shadow-lg">
+        <img
+          [src]="service.image"
+          class="card-img-top img-fluid object-fit-cover"
+          [alt]="service.title"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ service.title }}</h5>
+          <p class="card-text text-muted d-none d-md-block">{{ service.desc }}</p>
+        </div>
       </div>
-    </div>
-
-    <!-- Anniversary Card -->
-    <div class="card border-0 shadow-lg" style="width: 350px">
-      <img
-        src="../../assets/images/events/Anniversary.jpg"
-        class="card-img-top img-fluid object-fit-cover"
-        alt="Anniversary"
-      />
-      <div class="card-body">
-        <h5 class="card-title">Anniversary</h5>
-        <p class="card-text">
-          Celebrate your love story with elegant decor and stunning photos that
-          will last a lifetime.
-        </p>
-      </div>
-    </div>
-
-    <!-- Baby Shower Card -->
-    <div class="card border-0 shadow-lg" style="width: 350px">
-      <img
-        src="../../assets/images/events/Baby.jpg"
-        class="card-img-top img-fluid object-fit-cover"
-        alt="Baby Shower"
-      />
-      <div class="card-body">
-        <h5 class="card-title">Baby Shower</h5>
-        <p class="card-text">
-          Celebrate the arrival of your little one with delightful decor and
-          precious memories captured on film.
-        </p>
-      </div>
-    </div>
-
-    <!-- Bridal Shower Card -->
-    <div class="card border-0 shadow-lg" style="width: 350px">
-      <img
-        src="../../assets/images/events/Bridal.jpg"
-        class="card-img-top img-fluid object-fit-cover"
-        alt="Bridal Shower"
-      />
-      <div class="card-body">
-        <h5 class="card-title">Bridal Shower</h5>
-        <p class="card-text">
-          Pamper the bride-to-be with a beautiful bridal shower, complete with
-          exquisite decor and photo-worthy moments.
-        </p>
-      </div>
-    </div>
-
-    <!-- Corporate Event Card -->
-    <div class="card border-0 shadow-lg" style="width: 350px">
-      <img
-        src="../../assets/images/events/Corporate.jpg"
-        class="card-img-top img-fluid object-fit-cover"
-        alt="Corporate Event"
-      />
-      <div class="card-body">
-        <h5 class="card-title">Corporate Event</h5>
-        <p class="card-text">
-          Host your next corporate event with professional decor and flawless
-          photography that reflects your brand.
-        </p>
-      </div>
-    </div>
-
-    <!-- Outdoor Event Card -->
-    <div class="card border-0 shadow-lg" style="width: 350px">
-      <img
-        src="../../assets/images/events/Outdoor.jpg"
-        class="card-img-top img-fluid object-fit-cover"
-        alt="Outdoor Event"
-      />
-      <div class="card-body">
-        <h5 class="card-title">Outdoor Event</h5>
-        <p class="card-text">
-          Whether it's a picnic, festival, or a garden party, we offer the
-          perfect outdoor event decor and photography.
-        </p>
-      </div>
-    </div>
-    <!-- Birthday Party Card -->
-    <div class="card border-0 shadow-lg" style="width: 350px">
-      <img
-        src="../../assets/images/events/Birthday.jpg"
-        class="card-img-top img-fluid object-fit-cover"
-        alt="Birthday Party"
-      />
-      <div class="card-body">
-        <h5 class="card-title">Birthday Party</h5>
-        <p class="card-text">
-          Celebrate in style! We offer custom decor and photography services to
-          make your birthday party unforgettable.
-        </p>
-      </div>
-    </div>
-  </div>
+    </swiper-slide>
+  </swiper-container>
 </section>
-
-<!-- 
-  <div *ngIf="services.length > 0">
-    <ul class="list-group">
-      <li *ngFor="let service of services" class="list-group-item">
-        <h5>{{ service.name }}</h5>
-        <p>{{ service.description }}</p>
-        <p>Price: ${{ service.price }}</p>
-        <p>Category: {{ service.category }}</p>
-      </li>
-    </ul>
-  </div>
-  <div *ngIf="services.length === 0">
-    <p>No services available at the moment.</p>
-  </div> -->
